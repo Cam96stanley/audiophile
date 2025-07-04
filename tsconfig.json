@@ -22,6 +22,20 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "scripts/seeds.js",
+    "data/relatedProductImages.js",
+    "data/relatedProducts.js",
+    "lib/db.js",
+    "data/products.js",
+    "data/productImages.js",
+    "data/includes.js",
+    "data/gallaryImages.js",
+    "data/categoryImages.js"
+  ],
   "exclude": ["node_modules"]
 }
