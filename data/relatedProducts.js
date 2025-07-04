@@ -3,7 +3,6 @@ export const relatedProducts = [
     product_id: 1,
     related_slug: "xx99-mark-one-headphones",
     related_name: "XX99 Mark I",
-    type: "mobile",
   },
   {
     product_id: 1,
