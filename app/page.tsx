@@ -1,3 +1,4 @@
+import PreviewCard from "@/app/components/preview-card/PreviewCard";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
           <button className={styles.products__button}>See Product</button>
         </div>
       </main>
+      <section className={styles.card__section}>
+        <PreviewCard />
+      </section>
     </div>
   );
 }
