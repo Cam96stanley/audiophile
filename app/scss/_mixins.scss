@@ -81,7 +81,7 @@
 }
 
 @mixin overline(
-  $weight: 400,
+  $weight: 100,
   $size: 14px,
   $line-height: 19px,
   $letter-spacing: 10px
@@ -110,7 +110,7 @@
   color: variables.$off-black;
 }
 
-@mixin body($weight: 500, $size: 15px, $line-height: 25px) {
+@mixin body($weight: 400, $size: 15px, $line-height: 25px) {
   font-family: var(--font-manrope);
   font-weight: $weight;
   font-size: $size;

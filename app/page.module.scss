@@ -1,0 +1,51 @@
+@use "./scss/mixins";
+@use "./scss/variables";
+
+.hero {
+  background-image: url("./assets/home/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 550px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+  }
+
+  .subtitle {
+    @include mixins.overline;
+    color: white;
+  }
+
+  .title {
+    @include mixins.h2;
+    color: variables.$light-gray;
+  }
+
+  .body {
+    @include mixins.body;
+    color: variables.$light-gray;
+  }
+
+  .products__button {
+    background-color: variables.$orange;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    @include mixins.subtitle;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: variables.$light-orange;
+      color: variables.$gray;
+    }
+  }
+}
