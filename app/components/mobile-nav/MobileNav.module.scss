@@ -1,0 +1,28 @@
+@use "../../scss/variables";
+@use "../../scss/mixins";
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0.5rem;
+  z-index: 1;
+  background-color: variables.$off-black;
+  width: 50vw;
+  margin: 0.25rem;
+
+  .nav__item {
+    margin: 0.5rem 0;
+
+    .link {
+      text-decoration: none;
+      @include mixins.body;
+      color: white;
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+  }
+}

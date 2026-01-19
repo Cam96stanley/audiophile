@@ -1,0 +1,119 @@
+@use "./variables";
+
+@mixin h1($weight: 700, $size: 56px, $line-height: 58px, $letter-spacing: 2px) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin h2(
+  $weight: 700,
+  $size: 40px,
+  $line-height: 44px,
+  $letter-spacing: 1.5px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin h3(
+  $weight: 700,
+  $size: 32px,
+  $line-height: 36px,
+  $letter-spacing: 1.15px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin h4($weight: 700, $size: 28px, $line-height: 38px, $letter-spacing: 2px) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin h5(
+  $weight: 700,
+  $size: 24px,
+  $line-height: 33px,
+  $letter-spacing: 1.7px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin h6(
+  $weight: 700,
+  $size: 18px,
+  $line-height: 24px,
+  $letter-spacing: 1.3px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin overline(
+  $weight: 400,
+  $size: 14px,
+  $line-height: 19px,
+  $letter-spacing: 10px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$light-orange;
+}
+
+@mixin subtitle(
+  $weight: 700,
+  $size: 13px,
+  $line-height: 25px,
+  $letter-spacing: 1px
+) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  color: variables.$off-black;
+}
+
+@mixin body($weight: 500, $size: 15px, $line-height: 25px) {
+  font-family: var(--font-manrope);
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: variables.$off-black;
+}

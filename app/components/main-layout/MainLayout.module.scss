@@ -1,0 +1,68 @@
+@use "../../scss/variables";
+@use "../../scss/mixins";
+
+.header {
+  background-color: variables.$off-black;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+
+  .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: 1100px) {
+    .ham_button {
+      display: none;
+    }
+  }
+
+  .links__container {
+    display: none;
+
+    > ul {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .link {
+      text-decoration: none;
+      @include mixins.subtitle;
+      color: white;
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.icon {
+  transition: filter 0.2s ease;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(60%) saturate(500%)
+      hue-rotate(10deg);
+  }
+}
+
+.logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
